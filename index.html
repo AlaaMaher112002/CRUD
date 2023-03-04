@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>CRUD</title>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="crud w-75 m-auto p-5 my-3 ">
+        <h1 class="text-center fw-bold">CRUD</h1>
+        <label>Product Name:</label>
+        <input type="text" class="form-control" id="ProductName">
+        <div class="alert alert-danger form-control d-none" id="AlertName">Product name should be start with capital
+            letter then at least 3 lower letter</div>
+        <label>Product Price:</label>
+        <input type="number" class="form-control" id="ProductPrice">
+         <div class="alert alert-danger form-control d-none" id="AlertPrice"> Price should be fewer than 6 digit</div> 
+        <label>Product Category:</label>
+        <input type="text" class="form-control" id="ProductCat">
+        <div class="alert alert-danger form-control d-none" id="AlertCatogry">Product Category should be start with capital
+            letter then at least 3 lower letter</div>
+        <label>Product Describtion:</label>
+        <textarea type="text" class="form-control" id="ProductDesc"></textarea>
+        <div class="alert alert-danger form-control d-none" id="AlertDesc">Product Describtion should be start with capital
+            letter then at least 3 lower letter</div>
+        <button class="btn float-end my-3 " id="addBtn">Add Product</button>
+        <div class="clearfix"></div>
+        <input type="text" class="form-control my-2" id="SearchInput" placeholder="Search by name........">
+
+
+        <table class="table">
+            <thead class="text-white py-2">
+                <th>Name</th>
+                <th>Price</th>
+                <th>Catogry</th>
+                <th>Describtion</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/java.js"></script>
+</body>
+
+</html>
